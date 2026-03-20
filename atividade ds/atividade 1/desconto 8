@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc1 = new Scanner(System.in);
+	    
+		System.out.println("Digite o preço: ");
+	    double pre = sc1.nextDouble();
+	    
+	    if(pre<=100)
+	        {
+	         pre = pre + (pre * 20/100);
+	        System.out.println("O preço com desconte é de: "+pre);
+	        }
+        else if (pre>100)
+	        {
+	        pre = pre + (pre * 10/100);
+	        System.out.println("O preço com desconte é de: "+pre);
+	        }
+	}
+}

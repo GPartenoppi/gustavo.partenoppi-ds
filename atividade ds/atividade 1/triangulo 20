@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Digite o primeiro lado: ");
+        double a = sc.nextDouble();
+        
+        System.out.println("Digite o segundo lado: ");
+        double b = sc.nextDouble();
+        
+        System.out.println("Digite o terceiro lado: ");
+        double c = sc.nextDouble();
+        
+        // Verifica se forma triângulo
+        if(a + b > c && a + c > b && b + c > a)
+        {
+            // Classificação
+            if(a == b && b == c)
+            {
+                System.out.println("Triângulo Equilátero");
+            }
+            else if(a == b || a == c || b == c)
+            {
+                System.out.println("Triângulo Isósceles");
+            }
+            else
+            {
+                System.out.println("Triângulo Escaleno");
+            }
+        }
+        else
+        {
+            System.out.println("Não forma triângulo");
+        }
+    }
+}
