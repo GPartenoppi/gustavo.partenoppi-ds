@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner sc1=new Scanner(System.in);
+    
+    System.out.println("Entre com a primeira nota: ");
+    int nota1 = sc1.nextInt();
+    
+    System.out.println("Entre com a segunda nota: ");
+    int nota2 = sc1.nextInt();
+    
+    System.out.println("Entre com a terceira nota: ");
+    int nota3 = sc1.nextInt();
+    int med = (nota1+nota2+nota3)/3;
+    if(med > 7)
+    {
+       System.out.println("Você passou");
+    }
+    else if ( med >=5 && med<7) 
+    {
+        System.out.println("Você esta de recuperação");
+    }
+    else
+    {
+        System.out.println("Você reprovou");
+    }
+	}
+}
