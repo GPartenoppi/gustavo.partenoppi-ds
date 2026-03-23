@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc1 = new Scanner(System.in);
+	    
+      System.out.println("Digite a quantidade de horas: ");
+      int hora=sc1.nextInt();
+      hora=hora * 60;
+      System.out.println("Suas horas em minutos são: "+hora);
+	}
+}
+	    

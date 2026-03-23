@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc1 = new Scanner(System.in);
+	    
+	     System.out.println("Qual o seu salario?");
+	     int sal=sc1.nextInt();
+	     System.out.println("Quanto voce quer de emprestimo?");
+	     int em=sc1.nextInt();
+	     
+	     if(em>=sal*0.30){
+	         System.out.println("Emprestimo aceito");
+	     }
+	     else{
+	         System.out.println("Emprestimo negado");
+	     }
+}}

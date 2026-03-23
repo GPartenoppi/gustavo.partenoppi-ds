@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc1 = new Scanner(System.in);
+	    
+	     System.out.println("Qual a distancia?: ");
+	     Double km=sc1.nextDouble();
+	     System.out.println("Quantos km/h vc esta indo? ");
+	     Double velo=sc1.nextDouble();
+	     
+	     Double temp=km/velo;
+	     System.out.println("Voce levara "+velo+" horas para chegar la");
+
+}}
+	    
