@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc1 = new Scanner(System.in);
+	    
+	    
+        System.out.println("Escreva alguma coisa: ");
+        String text=sc1.next();
+        int quant=text.length();
+        System.out.println("a quantidade de caracteres da sua mensagem é de: "+quant);
+	}}
+        

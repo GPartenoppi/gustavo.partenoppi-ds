@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc1 = new Scanner(System.in);
+	    
+	    String loginc="Gustavo";
+	    String senhac="nsei";
+	    int tent=0;
+	    
+	   while(tent<3){ 
+	    System.out.println("Digite o usuario: ");
+	    String login=sc1.next();
+        System.out.println("Digite a senha: ");
+        String senha=sc1.next();
+        
+                
+                    if(!loginc.equals(login)||!senhac.equals(senha)){
+                        tent++;
+                        System.out.println("tente novamente");System.out.println();;
+                    }
+                    else{
+                        System.out.println("Bem vindo!");
+                        break;
+                    }
+                }}}
